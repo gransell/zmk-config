@@ -8,10 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&soft_off {
-    hold-time-ms = <2000>; // Only turn off it the key is held for 5 seconds or longer.
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -21,9 +17,9 @@
             key-positions = <19 20>;
         };
 
-        soft_off {
-            bindings = <&soft_off>;
-            key-positions = <29 30 31 28>;
+        combo_df_space {
+            bindings = <&kp SPACE>;
+            key-positions = <15 16>;
         };
     };
 
